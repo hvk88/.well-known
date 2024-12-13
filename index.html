@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página temática de Super Mario 64 con un diseño moderno en modo oscuro.">
+    <meta name="keywords" content="Super Mario 64, Modo Oscuro, Animaciones, SM64">
+    <meta name="author" content="Tu Nombre">
+    <title>Super Mario 64 - Página Animada</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212; /* Modo oscuro */
+            color: #fff;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 3rem;
+            color: #ffcc00;
+            animation: pulse 2s infinite;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Animación de pulso */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Fondo animado */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://upload.wikimedia.org/wikipedia/en/5/5a/Sm64box.jpg') center/cover no-repeat;
+            filter: blur(8px) brightness(0.5);
+            animation: background-move 10s linear infinite;
+        }
+
+        @keyframes background-move {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Botón interactivo */
+        .button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #e64a19;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Fondo animado -->
+    <div class="background"></div>
+
+    <!-- Contenido principal -->
+    <h1>Super Mario 64</h1>
+    <p>¡Bienvenido a la página temática de Super Mario 64 en modo oscuro!</p>
+    <button class="button" onclick="alert('¡Prepárate para la aventura en el Reino Champiñón!')">Explorar</button>
+</body>
+</html
